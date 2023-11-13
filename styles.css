@@ -69,6 +69,10 @@
     margin: 5%;
 }
 
+.mdl-card__media .article-image{
+  margin: 0;
+}
+
 .portfolio-navigation-row .is-active {
   position: relative;
   font-weight: bold;
