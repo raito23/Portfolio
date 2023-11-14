@@ -70,6 +70,10 @@
     margin: 5%;
 }
 
+.mdl-card__media .skill{
+  margin: 20%;
+}
+
 .mdl-card__media .article-image{
   margin: 0;
 }
