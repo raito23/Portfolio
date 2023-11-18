@@ -41,17 +41,31 @@
       <div class="mdl-grid portfolio-max-width">
         <div class="mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
           <div class="mdl-card__media mdl-cell mdl-cell--12-col-tablet">
-            <img class="article-image" src=images/music_sub.png border="0" alt="">
+            <img class="article-image" src=images/routes.png border="0" alt="">
           </div>
           <div class="mdl-cell mdl-cell--8-col">
-            <h2 class="mdl-card__title-text">音楽ストリーミング</h2>
+            <h2 class="mdl-card__title-text">類似曲検索システム『Route』</h2>
             <div class="mdl-card__supporting-text padding-top">
               <span><a href="https://gms.gdl.jp/raito23/">アプリケーションへ</a></span>
             </div>
             <div class="mdl-card__supporting-text no-left-padding">
-              <p>Spotify APIを用いて音楽ストリーミングサービスを制作しました。
-                元々趣味が音楽ということもあり音楽関係の開発を一度してみたいと思い開発しました。
-                ログイン機能を取り付けているので今後おすすめの楽曲をshareできるような機能を取り付けたいと考えています。</p>
+              <p>Spotify APIを用いて類似曲を検索するシステムを制作しました。
+                元々趣味が音楽ということもあり音楽関係の開発を一度してみたいと思い制作しました。
+                ログイン機能を取り付けているのですが現在は何かに使用しているわけではございません。
+                今後おすすめの楽曲をshareできるような機能を取り付けたいと考えています。
+                コサイン類似度を用いて多次元での分析をしました。ただ使用した楽曲数が処理速度の関係で
+                spotifyのJAPAN週間ランキングの上位50曲のみに絞っているので精度が低いです。
+                こちらに関しては今後データ数を増やしていきたいと考えています。
+              </p>
+              <span>以下は使用した特徴量です。</span>
+              <ul>
+                <li>danceability：ダンスのしやすさ</li>
+                <li>energy：聴感的な強さ、アクティビティ</li>
+                <li>instrumentalness：楽器の使用の度合い</li>
+                <li>loudness：音の大きさ</li>
+                <li>speechiness：単語の存在度</li>
+                <li>valence：音楽的なポジティブ、ネガティブ性</li>
+              </ul>
               <span>使用技術: Python, Flask, PostgreSQL</span>
             </div>
           </div>
